@@ -1,0 +1,24 @@
+# Spring Boot specific
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE-specific
+/.idea/
+/.vscode/
+
+# Gradle-specific
+.gradle/
+build/
+
+# Maven-specific
+/.m2/
+
+# Logs
+/logs/
+*.log
+
+# Test reports
+/test-output/
+
+# Miscellaneous
+.DS_Store
