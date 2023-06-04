@@ -56,6 +56,7 @@ public class UserController {
 		user.setCart(cart);
 		if(createUserRequest.getPassword().length()<7 ||
 				!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())){
+			log.debug("Unable to create user - user password don`t meet the criteria");
 			return ResponseEntity.badRequest().build();
 		}
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
